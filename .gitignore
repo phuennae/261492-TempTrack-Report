@@ -1,0 +1,44 @@
+# LaTeX core intermediate files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Bibliography and Index
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ind
+*.ilg
+*.run.xml
+
+# latexmk specific
+*.fdb_latexmk
+
+# XeLaTeX specific
+*.xdv
+
+# SyncTeX (ใช้กดเชื่อมโค้ดกับ PDF)
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code specific
+.vscode/
+
+# (Optional) Ignore PDF files to save repo space
+*.pdf

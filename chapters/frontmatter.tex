@@ -1,0 +1,55 @@
+\maketitle
+\makesignature
+
+\ifproject
+\begin{abstractTH}
+
+โครงงานนี้มีวัตถุประสงค์เพื่อพัฒนาแพลตฟอร์มที่ใช้เทคโนโลยีบล็อกเชน และ อินเทอร์เน็ตทุกสรรพสิ่ง หรือ ไอโอที ในการจัดการซัพพลายเชนของอาหารแช่แข็ง โดยเน้นการติดตามและบันทึกข้อมูลอุณหภูมิแบบเรียลไทม์ ระบบที่พัฒนาขึ้นสามารถแจ้งเตือนอัตโนมัติเมื่ออุณหภูมิของสินค้าอยู่นอกช่วงที่กำหนด และช่วยให้สามารถตรวจสอบย้อนหลังข้อมูลได้อย่างโปร่งใสและปลอดภัย เพื่อลดการสูญเสียของอาหารแช่แข็ง
+ที่เกิดจากอุณหภูมิที่ไม่เหมาะสมระหว่างการขนส่ง
+ระบบประกอบด้วยส่วนสำคัญ ได้แก่ การบันทึกข้อมูลสินค้าโดยเจ้าหน้าที่ การใช้เซ็นเซอร์ IoTs สำหรับวัดอุณหภูมิและส่งข้อมูลไปยังระบบกลางแบบเข้ารหัส การใช้ระบบการติดตามแบบเรียลไทม์บน บล็อกเชน เพื่อยืนยันและบันทึกข้อมูลโดยอัตโนมัติ และการพัฒนาอินเทอร์เฟซสำหรับเจ้าหน้าที่ในการตรวจสอบข้อมูล วิเคราะห์สถานะสินค้า และรับการแจ้งเตือนเมื่อมีค่าผิดปกติ
+โครงงานนี้ยังมุ่งเน้นการศึกษาและทดสอบประสิทธิภาพของบล็อกเชน และ อินเทอร์เน็ตทุกสรรพสิ่ง หรือ ไอโอทีในการปรับปรุงกระบวนการจัดการซัพพลายเชนของอาหาร
+แช่แข็ง โดยคาดหวังว่านวัตกรรมนี้จะช่วยเพิ่ม
+ความโปร่งใส ลดความสูญเสีย และเสริมสร้างความเชื่อมั่นในคุณภาพของสินค้าอาหารแช่แข็งในห่วงโซ่อุปทาน                                                             
+\end{abstractTH}
+
+\begin{abstract}
+
+This project aims to develop a platform utilizing Blockchain technology and the Internet of Things (IoTs) for managing the supply chain of frozen food, with a focus on real-time temperature tracking and recording. The developed system can automatically send alerts when the product's temperature falls outside the predefined range and enables transparent and secure traceability to reduce frozen food losses caused by improper temperature conditions during transportation.
+The system comprises key components, including product data recording by personnel, the use of IoTs sensors to measure temperature and transmit encrypted data to the central system, an intelligent tracking system based on Blockchain for automatic data verification and recording, and an interface for personnel to monitor data, analyze product status, and receive notifications in case of anomalies.
+This project also aims to study and test the effectiveness of Blockchain and IoTs in improving the frozen food supply chain management process. It is expected that this innovation will enhance transparency, reduce losses, and strengthen confidence in the quality of frozen food products within the supply chain.
+\end{abstract}
+
+\iffalse
+\begin{dedication}
+This document is dedicated to all Chiang Mai University students.
+
+Dedication page is optional.
+\end{dedication}
+\fi % \iffalse
+
+\begin{acknowledgments}
+
+
+โครงงานนี้จะไม่สามารถสำเร็จลุล่วงไปได้ หากไม่ได้รับความอนุเคราะห์และการสนับสนุนจากหลายฝ่าย ข้าพเจ้าขอแสดงความขอบคุณเป็นอย่างยิ่งต่อ รศ.ดร.อัญญา อาภาวัชรุตม์ อาจารย์ที่ปรึกษาโครงงาน ที่สละเวลาอันมีค่าให้คำแนะนำ ให้แนวคิด และชี้แนะแหล่งความรู้ที่จำเป็นสำหรับการพัฒนาระบบฮาร์ดเเวร์และเว็บแอปพลิเคชั่น ตลอดจนช่วยตรวจสอบและแก้ไขข้อบกพร่องต่าง ๆ ด้วยความเอาใจใส่มาโดยตลอด
+นอกจากนี้ ข้าพเจ้าขอขอบพระคุณ รศ.ดร. ตรัสพงศ์ ไทยอุปถัมภ์ และ ผศ.ดร. นวดนย์ คุณเลิศกิจ ที่ให้คำปรึกษาและข้อเสนอแนะอันเป็นประโยชน์ จนทำให้โครงงานนี้มีความสมบูรณ์ยิ่งขึ้น
+ขอขอบคุณเพื่อนๆ และรุ่นพี่ทุกท่าน ที่คอยให้คำแนะนำ ให้กำลังใจ และเป็นแรงสนับสนุนตลอดมา ซึ่งเป็นพลังผลักดันสำคัญที่ทำให้ข้าพเจ้ามุ่งมั่นและตั้งใจทำงานจนสามารถพัฒนาโครงงานนี้จนสำเร็จ
+สุดท้ายนี้ ข้าพเจ้าขอขอบพระคุณทุกท่านที่ไม่ได้เอ่ยนาม ณ ที่นี้ ซึ่งได้ให้ความช่วยเหลือและสนับสนุนโครงงานในรูปแบบต่างๆ ตลอดระยะเวลาการดำเนินงาน ขอบพระคุณเป็นอย่างสูง
+
+
+\acksign{2026}{3}{1}
+\end{acknowledgments}%
+\fi % \ifproject
+
+\contentspage
+
+\ifproject
+\figurelistpage
+
+\tablelistpage
+\fi % \ifproject
+
+% \abbrlist % this page is optional
+
+% \symlist % this page is optional
+
+% \preface % this section is optional
