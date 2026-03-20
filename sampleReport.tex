@@ -32,44 +32,8 @@
 \usepackage{pdflscape} % for landscape figures and tables. 
 \usepackage{float}
 \usepackage{hyperref}
-%% Some other useful packages. Look these up to find out how to use
-%% them.
-% \usepackage{natbib}    % for author-year citation styles
-% \usepackage{txfonts}
-% \usepackage{appendix}  % for appendices on a per-chapter basis
-% \usepackage{xtab}      % for tables that go over multiple pages
-% \usepackage{subfigure} % for subfigures within a figure
-% \usepackage{pstricks,pdftricks} % for access to special PostScript and PDF commands
-% \usepackage{nomencl}   % if you have a list of abbreviations
-
-%% if you're having problems with overfull boxes, you may need to increase
-%% the tolerance to 9999
-% \tolerance=9999
 
 \bibliographystyle{plain}
-% \bibliographystyle{IEEEbib}
-
-% \renewcommand{\topfraction}{0.85}
-% \renewcommand{\textfraction}{0.1}
-% \renewcommand{\floatpagefraction}{0.75}
-
-%% Example for glossary entry
-%% Need to use glossary option
-%% See glossaries package for complete documentation.
-\ifglossary
-  \newglossaryentry{lorem ipsum}{
-    name=lorem ipsum,
-    description={derived from Latin dolorem ipsum, translated as ``pain itself''}
-  }
-\fi
-
-%% Uncomment this command to preview only specified LaTeX file(s)
-%% imported with \include command below.
-%% Any other file imported via \include but not specified here will not
-%% be previewed.
-%% Useful if your report is large, as you might not want to build
-%% the entire file when editing a certain part of your report.
-% \includeonly{chapters/intro,chapters/background}
 
 \begin{document}
 \include{chapters/frontmatter}
@@ -85,9 +49,10 @@
 % \include{chapters/conclusion}
 \fi
 
-% ---------------- ส่วนบรรณานุกรม ----------------
-% คอมเมนต์ \bibliography{sampleReport} ไว้เพราะคุณใช้การพิมพ์ Manual ด้านล่าง
-% \bibliography{sampleReport} 
+% ---------------- ส่วนบรรณานุกรม (แก้ไขเพื่อให้ขึ้นในสารบัญ) ----------------
+\cleardoublepage
+\addcontentsline{toc}{chapter}{บรรณานุกรม} 
+\chapter*{บรรณานุกรม}
 
 \noindent [1] Benchmarking Hyperledger Fabric 2.5 Performance. Available: \url{https://www.lfdecentralizedtrust.org/blog/2023/02/16/benchmarking-hyperledger-fabric-2-5-performance}\\
 
@@ -124,22 +89,15 @@
 \ifproject
 \normalspacing
 
-% เปิดใช้งานภาคผนวก (ดึงไฟล์จาก chapters/appendix.tex)
+% เปิดใช้งานภาคผนวก
 \appendix
 \include{chapters/appendix}
-
-%% Display glossary (optional) -- need glossary option.
-% \ifglossary\glossarypage\fi
-
-% %% Display index (optional) -- need idx option.
-% \ifindex\indexpage\fi
 
 % เปิดใช้งานประวัติผู้เขียน
 \begin{biosketch}
 
 % ==================== คนที่ 1 ====================
 \begin{center}
-  % เปลี่ยนชื่อไฟล์รูปในปีกกาให้ตรงกับรูปของนันท์นภัส
   \includegraphics[width=1.5in]{meow1.jpg} 
 \end{center}
 \vspace{1em}
@@ -149,11 +107,10 @@
 \textbf{การศึกษา} ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ \\
 \textbf{E-mail} nunnapats2940@gmail.com
 
-\vspace{3em} % เว้นระยะห่างก่อนขึ้นคนต่อไป (หรือเปลี่ยนเป็น \newpage ถ้าอยากให้ขึ้นหน้าใหม่เลย)
+\vspace{3em} 
 
 % ==================== คนที่ 2 ====================
 \begin{center}
-  % เปลี่ยนชื่อไฟล์รูปในปีกกาให้ตรงกับรูปของปิ่นนารี
   \includegraphics[width=1.5in]{pinnaree.JPG} 
 \end{center}
 \vspace{1em}
@@ -162,11 +119,11 @@
 \textbf{รหัสนักศึกษา} 650610785 \\
 \textbf{การศึกษา} ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ \\
 \textbf{E-mail} pprommitr@gmail.com
+
 \vspace{3em} 
 
 % ==================== คนที่ 3 ====================
 \begin{center}
-  % เปลี่ยนชื่อไฟล์รูปในปีกกาให้ตรงกับรูปของผืนป่า
   \includegraphics[width=1.5in]{phuenpa.jpg} 
 \end{center}
 \vspace{1em}
@@ -175,6 +132,7 @@
 \textbf{รหัสนักศึกษา} 650612090 \\
 \textbf{การศึกษา} ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ \\
 \textbf{E-mail} phuenpach@gmail.com
+
 \end{biosketch}
 \fi  
 
