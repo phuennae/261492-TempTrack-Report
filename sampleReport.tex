@@ -85,27 +85,10 @@
 % \include{chapters/conclusion}
 \fi
 
-\bibliography{sampleReport}
+% ---------------- ส่วนบรรณานุกรม ----------------
+% คอมเมนต์ \bibliography{sampleReport} ไว้เพราะคุณใช้การพิมพ์ Manual ด้านล่าง
+% \bibliography{sampleReport} 
 
-\ifproject
-\normalspacing
-% \appendix
-% \include{chapters/appendix}
-
-%% Display glossary (optional) -- need glossary option.
-% \ifglossary\glossarypage\fi
-
-% %% Display index (optional) -- need idx option.
-% \ifindex\indexpage\fi
-
-% \begin{biosketch}
-% \begin{center}
-%   \includegraphics[width=1.5in]{mugshot.jpg}
-% \end{center}
-% Your biosketch goes here. Make sure it sits inside
-% the \texttt{biosketch} environment.
-% \end{biosketch}
-% \fi  \ifproject
 \noindent [1] Benchmarking Hyperledger Fabric 2.5 Performance. Available: \url{https://www.lfdecentralizedtrust.org/blog/2023/02/16/benchmarking-hyperledger-fabric-2-5-performance}\\
 
 \noindent [2] What is Hyperledger Fabric? Available:
@@ -136,5 +119,64 @@
 
 \noindent [11] What is Cloud Computing? - Amazon Web Services. Available: 
 \url{https://aws.amazon.com/what-is-cloud-computing/}
+
+% ---------------- ส่วนภาคผนวก และ ประวัติผู้เขียน ----------------
+\ifproject
+\normalspacing
+
+% เปิดใช้งานภาคผนวก (ดึงไฟล์จาก chapters/appendix.tex)
+\appendix
+\include{chapters/appendix}
+
+%% Display glossary (optional) -- need glossary option.
+% \ifglossary\glossarypage\fi
+
+% %% Display index (optional) -- need idx option.
+% \ifindex\indexpage\fi
+
+% เปิดใช้งานประวัติผู้เขียน
+\begin{biosketch}
+
+% ==================== คนที่ 1 ====================
+\begin{center}
+  % เปลี่ยนชื่อไฟล์รูปในปีกกาให้ตรงกับรูปของนันท์นภัส
+  \includegraphics[width=1.5in]{meow1.jpg} 
+\end{center}
+\vspace{1em}
+
+\noindent \textbf{ชื่อ-นามสกุล} นางสาวนันท์นภัส ศิริธนาโชคไพศาล \\
+\textbf{รหัสนักศึกษา} 650610776 \\
+\textbf{การศึกษา} ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ \\
+\textbf{E-mail} nunnapat.s@cmu.ac.th
+
+\vspace{3em} % เว้นระยะห่างก่อนขึ้นคนต่อไป (หรือเปลี่ยนเป็น \newpage ถ้าอยากให้ขึ้นหน้าใหม่เลย)
+
+% ==================== คนที่ 2 ====================
+\begin{center}
+  % เปลี่ยนชื่อไฟล์รูปในปีกกาให้ตรงกับรูปของปิ่นนารี
+  \includegraphics[width=1.5in]{meow2.jpg} 
+\end{center}
+\vspace{1em}
+
+\noindent \textbf{ชื่อ-นามสกุล} นางสาวปิ่นนารี พร้อมมิตร \\
+\textbf{รหัสนักศึกษา} 650610785 \\
+\textbf{การศึกษา} ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ \\
+\textbf{E-mail} pinnaree.p@cmu.ac.th
+
+\vspace{3em} 
+
+% ==================== คนที่ 3 ====================
+\begin{center}
+  % เปลี่ยนชื่อไฟล์รูปในปีกกาให้ตรงกับรูปของผืนป่า
+  \includegraphics[width=1.5in]{phuenpa.jpg} 
+\end{center}
+\vspace{1em}
+
+\noindent \textbf{ชื่อ-นามสกุล} นายผืนป่า จำปาศรี \\
+\textbf{รหัสนักศึกษา} 650612090 \\
+\textbf{การศึกษา} ปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ \\
+\textbf{E-mail} phuenpach@gmail.com
+\end{biosketch}
+\fi  
 
 \end{document}
