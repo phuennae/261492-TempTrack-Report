@@ -83,10 +83,10 @@
 \end{itemize}
 
 \section{การออกแบบส่วนติดต่อผู้ใช้งาน}
-การออกแบบหน้าจอของเว็บแอปพลิเคชันถูกพัฒนาขึ้นเพื่อให้ผู้ใช้งานสามารถโต้ตอบกับระบบได้อย่างสะดวกและมีประสิทธิภาพ โดยแบ่งการเข้าถึงออกเป็น 3 ส่วนหลัก ได้แก่ ส่วนการใช้งานทั่วไป ส่วนของผู้ดูแลระบบ (Admin) และส่วนของผู้ใช้งานทั่วไป (General User) โดยมีรายละเอียดหน้าจอดังต่อไปนี้
+การออกแบบหน้าจอของเว็บแอปพลิเคชันถูกพัฒนาขึ้นเพื่อให้ผู้ใช้งานสามารถโต้ตอบกับระบบได้อย่างสะดวกและมีประสิทธิภาพ โดยแบ่งหมวดหมู่การเข้าถึงออกเป็น 4 ส่วนหลัก ได้แก่ หน้าหลัก (Main) ส่วนการยืนยันตัวตน (Auth) ส่วนของผู้ใช้งานทั่วไป (User) และส่วนของผู้ดูแลระบบ (Admin) โดยมีรายละเอียดหน้าจอดังต่อไปนี้
 
-\subsection{ส่วนการใช้งานทั่วไป}
-ในส่วนนี้เป็นหน้าต่างพื้นฐานสำหรับผู้ใช้งานทุกคนที่เข้ามาสู่ระบบ ประกอบด้วย:
+\subsection{หน้าหลัก}
+ในส่วนนี้เป็นหน้าต่างแรกสำหรับผู้ใช้งานทุกคนที่เข้ามาสู่แพลตฟอร์ม ประกอบด้วย:
 
 \vspace{1em}
 \noindent \textbf{1. หน้าแรก} \\
@@ -98,25 +98,7 @@
     \label{fig:ui_home}
 \end{figure}
 
-\noindent \textbf{2. หน้าเข้าสู่ระบบ} \\
-สำหรับให้ผู้ใช้งานทั่วไปและผู้ดูแลระบบทำการยืนยันตัวตนเพื่อเข้าสู่ระบบ
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{signin.png}
-    \caption{หน้าเข้าสู่ระบบ}
-    \label{fig:ui_login}
-\end{figure}
-
-\noindent \textbf{3. หน้าสมัครสมาชิก} \\
-สำหรับให้ผู้ใช้งานใหม่ทำการลงทะเบียนและสร้างบัญชีผู้ใช้
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{signup.png}
-    \caption{หน้าสมัครสมาชิก}
-    \label{fig:ui_signup}
-\end{figure}
-
-\noindent \textbf{4. หน้าคู่มือการใช้งาน} \\
+\noindent \textbf{2. หน้าคู่มือการใช้งาน} \\
 อธิบายวิธีการใช้งานแพลตฟอร์มและฟีเจอร์ต่าง ๆ เพื่ออำนวยความสะดวกแก่ผู้ใช้ใหม่
 \begin{figure}[H]
     \centering
@@ -126,89 +108,80 @@
 \end{figure}
 
 
-\subsection{ส่วนของผู้ดูแลระบบ}
-สิทธิ์ของผู้ดูแลระบบหรือเจ้าหน้าที่จะเน้นไปที่การจัดการข้อมูลพัสดุและติดตามสถานะการจัดส่งในภาพรวม ประกอบด้วยหน้าต่างการทำงานดังนี้:
+\subsection{ส่วนการยืนยันตัวตน}
+ระบบรักษาความปลอดภัยและการเข้าถึงบัญชีผู้ใช้ ประกอบด้วย:
 
 \vspace{1em}
-\noindent \textbf{1. หน้ากรอกข้อมูลผู้ส่ง} \\
-สำหรับบันทึกข้อมูลส่วนตัวและที่อยู่ของผู้ส่งพัสดุ
+\noindent \textbf{1. หน้าเข้าสู่ระบบ} \\
+สำหรับให้ผู้ใช้งานทั่วไปและผู้ดูแลระบบทำการยืนยันตัวตนเพื่อเข้าสู่ระบบ
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{fillsenderaddress.png}
-    \caption{หน้ากรอกข้อมูลผู้ส่ง}
-    \label{fig:ui_admin_sender}
+    \includegraphics[width=0.8\textwidth]{signin.png}
+    \caption{หน้าเข้าสู่ระบบ}
+    \label{fig:ui_signin}
 \end{figure}
 
-\noindent \textbf{2. หน้ากรอกรายละเอียดพัสดุ} \\
-สำหรับระบุข้อมูลสำคัญของสินค้า เช่น น้ำหนัก ขนาด และช่วงอุณหภูมิควบคุมที่ต้องการ
+\noindent \textbf{2. หน้าสมัครสมาชิก} \\
+สำหรับให้ผู้ใช้งานใหม่ทำการลงทะเบียนและสร้างบัญชีผู้ใช้
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{fillparceldetail.png}
-    \caption{หน้ากรอกรายละเอียดพัสดุ}
-    \label{fig:ui_admin_parcel}
-\end{figure}
-
-\noindent \textbf{3. หน้ากรอกข้อมูลผู้รับ} \\
-สำหรับบันทึกที่อยู่และช่องทางการติดต่อของปลายทาง
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{fillrecipientaddress.png}
-    \caption{หน้ากรอกข้อมูลผู้รับ}
-    \label{fig:ui_admin_recipient}
-\end{figure}
-
-\noindent \textbf{4. หน้าเพิ่มที่อยู่จัดส่ง} \\
-สำหรับบันทึกข้อมูลที่อยู่ผู้ส่งหรือผู้รับรายการใหม่เข้าสู่ระบบ เพื่อความสะดวกรวดเร็วในการจัดส่งครั้งต่อไป
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{addsavedaddress.png}
-    \caption{หน้าเพิ่มที่อยู่จัดส่ง}
-    \label{fig:ui_admin_add_address}
-\end{figure}
-
-\noindent \textbf{5. หน้าจัดการที่อยู่จัดส่ง} \\
-สำหรับเรียกดู เลือกใช้งาน หรือแก้ไขข้อมูลที่อยู่ที่เคยถูกบันทึกไว้ในระบบ
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{savedaddress.png}
-    \caption{หน้าจัดการที่อยู่จัดส่ง}
-    \label{fig:ui_admin_saved_address}
-\end{figure}
-
-\noindent \textbf{6. หน้ากระดานสรุปผลรายการที่ส่งแล้ว} \\
-สำหรับดูประวัติและภาพรวมของพัสดุที่ทำการจัดส่งเสร็จสิ้นแล้ว
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{sent.png}
-    \caption{หน้ากระดานสรุปผลรายการที่ส่งแล้ว}
-    \label{fig:ui_admin_dashboard_sent}
-\end{figure}
-
-\noindent \textbf{7. หน้ากระดานสรุปผลรายการที่กำลังจัดส่ง} \\
-สำหรับดูสถานะและติดตามพัสดุที่กำลังอยู่ในระหว่างการจัดส่งไปยังจุดหมายปลายทาง
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{incoming.png}
-    \caption{หน้ากระดานสรุปผลรายการที่กำลังจัดส่ง}
-    \label{fig:ui_admin_dashboard_incoming}
-\end{figure}
-
-\noindent \textbf{8. หน้าการแจ้งเตือน} \\
-ระบบแจ้งเตือนสำหรับผู้ดูแลระบบ ในกรณีที่ตรวจพบว่าอุณหภูมิของพัสดุใด ๆ มีค่าสูงหรือต่ำกว่ามาตรฐานที่กำหนดไว้
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{notification.png}
-    \caption{หน้าการแจ้งเตือนสำหรับผู้ดูแลระบบ}
-    \label{fig:ui_admin_noti}
+    \includegraphics[width=0.8\textwidth]{signup.png}
+    \caption{หน้าสมัครสมาชิก}
+    \label{fig:ui_signup}
 \end{figure}
 
 
 \subsection{ส่วนของผู้ใช้งานทั่วไป}
-สิทธิ์ของผู้ใช้งานทั่วไปถูกออกแบบมาเพื่อรองรับผู้รับพัสดุ หรือผู้ที่ต้องการติดตามสถานะของสินค้าควบคุมอุณหภูมิ ประกอบด้วยหน้าต่างการทำงานดังนี้:
+หมวดหมู่นี้ถูกออกแบบมาเพื่อรองรับผู้ใช้งานใน 2 บทบาทหลัก ได้แก่ \textbf{ผู้ส่งพัสดุ (Sender)} ซึ่งเป็นผู้เดียวที่มีสิทธิ์ในการกรอกและจัดการข้อมูลการจัดส่ง และ \textbf{ผู้ใช้งานทั่วไปหรือผู้รับพัสดุ (Recipient)} ที่เน้นการติดตามสถานะและตรวจสอบความถูกต้อง โดยมีหน้าต่างการทำงานดังนี้:
 
 \vspace{1em}
-\noindent \textbf{1. หน้าตรวจสอบสถานะ} \\
-สำหรับให้ผู้ใช้งานกรอกหมายเลขติดตามพัสดุ เพื่อค้นหาสถานะการจัดส่ง
+\noindent \textbf{1. หน้ากรอกข้อมูลผู้ส่ง} \\
+สำหรับให้ \textbf{ผู้ส่งพัสดุ} บันทึกข้อมูลส่วนตัวและที่อยู่ของตนเอง \textit{(ผู้ใช้งานทั่วไปในบทบาทอื่นจะไม่สามารถกรอกข้อมูลในส่วนนี้ได้)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fillsenderaddress.png}
+    \caption{หน้ากรอกข้อมูลผู้ส่ง}
+    \label{fig:ui_user_sender}
+\end{figure}
+
+\noindent \textbf{2. หน้ากรอกรายละเอียดพัสดุ} \\
+สำหรับให้ \textbf{ผู้ส่งพัสดุ} ระบุข้อมูลสำคัญของสินค้า เช่น น้ำหนัก ขนาด และช่วงอุณหภูมิควบคุมที่ต้องการ
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fillparceldetail.png}
+    \caption{หน้ากรอกรายละเอียดพัสดุ}
+    \label{fig:ui_user_parcel}
+\end{figure}
+
+\noindent \textbf{3. หน้ากรอกข้อมูลผู้รับ} \\
+สำหรับให้ \textbf{ผู้ส่งพัสดุ} บันทึกที่อยู่และช่องทางการติดต่อของปลายทาง
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fillrecipientaddress.png}
+    \caption{หน้ากรอกข้อมูลผู้รับ}
+    \label{fig:ui_user_recipient}
+\end{figure}
+
+\noindent \textbf{4. หน้าเพิ่มที่อยู่จัดส่ง} \\
+สำหรับให้ \textbf{ผู้ส่งพัสดุ} บันทึกข้อมูลที่อยู่ผู้ส่งหรือผู้รับรายการใหม่เข้าสู่ระบบ เพื่อความสะดวกรวดเร็วในการจัดส่งครั้งต่อไป
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{addsavedaddress.png}
+    \caption{หน้าเพิ่มที่อยู่จัดส่ง}
+    \label{fig:ui_user_add_address}
+\end{figure}
+
+\noindent \textbf{5. หน้าจัดการที่อยู่จัดส่ง} \\
+สำหรับให้ \textbf{ผู้ส่งพัสดุ} เรียกดู เลือกใช้งาน หรือแก้ไขข้อมูลที่อยู่ที่เคยถูกบันทึกไว้ในระบบ
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{savedaddress.png}
+    \caption{หน้าจัดการที่อยู่จัดส่ง}
+    \label{fig:ui_user_saved_address}
+\end{figure}
+
+\noindent \textbf{6. หน้าตรวจสอบสถานะ} \\
+สำหรับให้ \textbf{ผู้ใช้งานทั่วไปและผู้รับพัสดุ} สามารถกรอกหมายเลขติดตามพัสดุ เพื่อค้นหาสถานะการจัดส่ง
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{checktracknum.png}
@@ -216,8 +189,26 @@
     \label{fig:ui_user_track}
 \end{figure}
 
-\noindent \textbf{2. หน้าตรวจสอบอุณหภูมิแบบเรียลไทม์} \\
-สำหรับเฝ้าระวังและดูข้อมูลการเปลี่ยนแปลงของอุณหภูมิพัสดุ ณ เวลาปัจจุบัน (Real-time Monitoring)
+\noindent \textbf{7. หน้ากระดานสรุปผลรายการที่กำลังจัดส่ง} \\
+สำหรับให้ \textbf{ผู้รับพัสดุ} ดูสถานะและติดตามพัสดุที่กำลังอยู่ในระหว่างการจัดส่งไปยังจุดหมายปลายทาง
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{incoming.png}
+    \caption{หน้ากระดานสรุปผลรายการที่กำลังจัดส่ง}
+    \label{fig:ui_user_dashboard_incoming}
+\end{figure}
+
+\noindent \textbf{8. หน้ากระดานสรุปผลรายการที่ส่งแล้ว} \\
+สำหรับดูประวัติและภาพรวมของพัสดุที่ \textbf{ผู้ส่งพัสดุ} ได้ทำการจัดส่งเสร็จสิ้นแล้ว
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{sent.png}
+    \caption{หน้ากระดานสรุปผลรายการที่ส่งแล้ว}
+    \label{fig:ui_user_dashboard_sent}
+\end{figure}
+
+\noindent \textbf{9. หน้าตรวจสอบอุณหภูมิแบบเรียลไทม์} \\
+สำหรับให้ \textbf{ผู้ใช้งานทุกคนที่เกี่ยวข้อง} เฝ้าระวังและดูข้อมูลการเปลี่ยนแปลงของอุณหภูมิพัสดุ ณ เวลาปัจจุบัน (Real-time Monitoring)
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{log.png}
@@ -225,8 +216,8 @@
     \label{fig:ui_user_log}
 \end{figure}
 
-\noindent \textbf{3. หน้าการแจ้งเตือน} \\
-แสดงการแจ้งเตือนสถานะความคืบหน้าของการจัดส่ง รวมถึงระบบแจ้งเตือนฉุกเฉินหากอุณหภูมิของสินค้าออกนอกเกณฑ์ที่กำหนด
+\noindent \textbf{10. หน้าการแจ้งเตือน} \\
+แสดงการแจ้งเตือนสถานะความคืบหน้าของการจัดส่ง รวมถึงระบบแจ้งเตือนฉุกเฉินหากอุณหภูมิของสินค้าออกนอกเกณฑ์
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{notification.png}
@@ -234,8 +225,8 @@
     \label{fig:ui_user_noti}
 \end{figure}
 
-\noindent \textbf{4. หน้าลายมือชื่อดิจิทัล} \\
-สำหรับให้ผู้รับพัสดุทำการเซ็นชื่ออิเล็กทรอนิกส์ผ่านหน้าจอเพื่อยืนยันการรับสินค้าเมื่อพัสดุถูกส่งถึงปลายทาง
+\noindent \textbf{11. หน้าลายมือชื่อดิจิทัล} \\
+สำหรับให้ \textbf{ผู้รับพัสดุ} ทำการเซ็นชื่ออิเล็กทรอนิกส์ผ่านหน้าจอเพื่อยืนยันการรับสินค้าเมื่อพัสดุถูกส่งถึงปลายทาง
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{digitalsignature.png}
@@ -243,11 +234,61 @@
     \label{fig:ui_user_signature}
 \end{figure}
 
-\noindent \textbf{5. หน้าสรุปข้อมูลการขนส่ง} \\
-หน้าต่างสรุปข้อมูลแบบเบ็ดเสร็จเมื่อการขนส่งเสร็จสิ้น โดยจะแสดงข้อมูลอุณหภูมิตั้งแต่เริ่มต้นจนถึงปลายทางในรูปแบบกราฟเชิงเวลา พร้อมทั้งแสดงสถานะการยืนยันความถูกต้องของข้อมูล (Verification) ซึ่งประมวลผลเปรียบเทียบกับข้อมูลบนเครือข่ายบล็อกเชน (Blockchain) เพื่อเป็นหลักฐานว่าข้อมูลตลอดการขนส่งไม่ได้ถูกดัดแปลง
+\noindent \textbf{12. หน้าสรุปข้อมูลการขนส่ง} \\
+หน้าต่างสรุปข้อมูลแบบเบ็ดเสร็จเมื่อการขนส่งเสร็จสิ้น โดยจะแสดงข้อมูลอุณหภูมิตั้งแต่เริ่มต้นจนถึงปลายทางในรูปแบบกราฟเชิงเวลา พร้อมทั้งแสดงสถานะการยืนยันความถูกต้องของข้อมูล (Verification) ผ่านบล็อกเชน
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{overview.png}
     \caption{หน้าสรุปข้อมูลการขนส่งและการยืนยันความถูกต้องผ่านบล็อกเชน}
     \label{fig:ui_user_overview}
+\end{figure}
+
+
+\subsection{ส่วนของผู้ดูแลระบบ}
+ส่วนนี้ถูกออกแบบมาสำหรับเจ้าหน้าที่ดูแลระบบเพื่อบริหารจัดการพนักงานขับรถและการจัดส่งพัสดุในภาพรวม ประกอบด้วยหน้าต่างการทำงานดังนี้:
+
+\vspace{1em}
+\noindent \textbf{1. หน้าเพิ่มข้อมูลคนขับรถ} \\
+สำหรับเพิ่มรายชื่อและรายละเอียดของคนขับรถคนใหม่เข้าสู่ระบบ เพื่อเตรียมความพร้อมในการจัดส่งพัสดุ
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{admin_add_driver.png}
+    \caption{หน้าเพิ่มข้อมูลคนขับรถ}
+    \label{fig:ui_admin_add_driver}
+\end{figure}
+
+\noindent \textbf{2. หน้าแสดงข้อมูลคนขับและพัสดุที่กำลังจัดส่ง} \\
+สำหรับดูรายชื่อคนขับทั้งหมด พร้อมทั้งตรวจสอบพัสดุที่แต่ละคนกำลังรับผิดชอบจัดส่งอยู่ในขณะนั้น
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{admin_driver_list.png}
+    \caption{หน้าแสดงข้อมูลคนขับและพัสดุที่กำลังจัดส่ง}
+    \label{fig:ui_admin_driver_list}
+\end{figure}
+
+\noindent \textbf{3. หน้าพัสดุที่รอการจัดสรรคนขับ} \\
+สำหรับแสดงรายการพัสดุที่เข้าสู่ระบบ และกำลังรอให้ผู้ดูแลระบบเลือกคนขับรถที่เหมาะสมเพื่อเริ่มต้นการจัดส่ง
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{admin_pending_parcels.png}
+    \caption{หน้าพัสดุที่รอเลือกคนขับเพื่อเริ่มการจัดส่ง}
+    \label{fig:ui_admin_pending_parcels}
+\end{figure}
+
+\noindent \textbf{4. หน้าอัปเดตสถานะการจัดส่ง} \\
+สำหรับให้ผู้ดูแลระบบเข้ามาปรับเปลี่ยนสถานะของพัสดุในระบบ เช่น เปลี่ยนจากสถานะอยู่ระหว่างการจัดส่ง (Shipped) เป็นจัดส่งสำเร็จแล้ว (Delivered)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{admin_update_status.png}
+    \caption{หน้าเปลี่ยนสถานะพัสดุ}
+    \label{fig:ui_admin_update_status}
+\end{figure}
+
+\noindent \textbf{5. หน้าประวัติพัสดุที่จัดส่งเสร็จสิ้น} \\
+สำหรับดูภาพรวมและตรวจสอบข้อมูลย้อนหลังของพัสดุทั้งหมดที่มีการจัดส่งเสร็จสิ้นสมบูรณ์แล้วในระบบ
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{admin_delivery_history.png}
+    \caption{หน้าประวัติพัสดุที่เคยจัดส่งเสร็จแล้วทั้งหมด}
+    \label{fig:ui_admin_delivery_history}
 \end{figure}
