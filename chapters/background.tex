@@ -95,7 +95,8 @@ Extracurricular knowledge used, applied, or integrated in this project
 
 โครงงานนี้ได้นำความรู้จากแหล่งอื่น ๆ ที่ไม่ได้อยู่ในรายวิชาเรียนหรือหลักสูตรของภาควิชา เพื่อเพิ่มประสิทธิภาพและเสริมสร้างความสามารถของการทำโครงงาน โดยมีรายละเอียดดังนี้
 \begin{itemize}
-    \item Blockchain – Hyperledger Fabric: โครงงานนี้ได้นำความรู้เกี่ยวกับ Hyperledger Fabric ซึ่งเป็นหนึ่งในเฟรมเวิร์กของ Permissioned Blockchain มาใช้ในการพัฒนาและออกแบบระบบที่เกี่ยวข้องกับการติดตามข้อมูลและการจัดเก็บบันทึกที่มีความปลอดภัยสูง โดยความรู้ที่นำมาใช้ประกอบด้วย
+    \item Blockchain – Hyperledger Fabric \\
+    โครงงานนี้ได้นำความรู้เกี่ยวกับ Hyperledger Fabric ซึ่งเป็นหนึ่งในเฟรมเวิร์กของ Permissioned Blockchain มาใช้ในการพัฒนาและออกแบบระบบที่เกี่ยวข้องกับการติดตามข้อมูลและการจัดเก็บบันทึกที่มีความปลอดภัยสูง โดยความรู้ที่นำมาใช้ประกอบด้วย
     \begin{enumerate}
         \item โครงสร้างของ Hyperledger Fabric: ระบบที่รองรับการทำงานแบบโมดูลาร์ สามารถกำหนดกลไกการยืนยันตัวตน (Identity Management) และรูปแบบฉันทามติ (Consensus Mechanism) ได้ตามต้องการ
         \item การใช้ Smart Contract (Chaincode): Chaincode ใน Hyperledger Fabric ทำหน้าที่เหมือน Smart Contract ในบล็อกเชนอื่น ๆ โดยใช้ภาษา Go, Node.js หรือ Java ซึ่งช่วยให้สามารถกำหนดตรรกะของธุรกรรมที่เกิดขึ้นในระบบได้
@@ -106,60 +107,68 @@ Extracurricular knowledge used, applied, or integrated in this project
     การนำ Hyperledger Fabric มาใช้ในโครงงานนี้ช่วยเพิ่มความน่าเชื่อถือของข้อมูล ลดโอกาสการปลอมแปลง และทำให้สามารถตรวจสอบข้อมูลย้อนหลังได้อย่างแม่นยำ
 \end{itemize}
 \begin{itemize}
-    \item โครงงานนี้ได้นำความรู้ด้านระบบคลาวด์คอมพิวติ้ง (Cloud Computing) ของ Amazon Web Services มาประยุกต์ใช้เป็นโครงสร้างพื้นฐาน (Infrastructure) หลักของระบบ เพื่อรองรับการติดตั้งและประมวลผลเครือข่าย Permissioned Blockchain (Hyperledger Fabric) รวมถึงเซิร์ฟเวอร์ตัวกลาง (Middleware) สำหรับการพัฒนาและออกแบบระบบติดตามข้อมูลและจัดเก็บบันทึกที่มีความปลอดภัยสูงและทำงานได้อย่างมีเสถียรภาพ โดยความรู้ที่นำมาประยุกต์ใช้ประกอบด้วย
+    \item ระบบประมวลผลแบบกลุ่มเมฆ (Cloud Computing) ของ Amazon Web Services \\
+    โครงงานนี้ได้นำความรู้ด้านระบบประมวลผลแบบกลุ่มเมฆ (Cloud Computing) ของ Amazon Web Services มาประยุกต์ใช้เป็นโครงสร้างพื้นฐาน (Infrastructure) หลักของระบบ เพื่อรองรับการติดตั้งและประมวลผลเครือข่าย Permissioned Blockchain (Hyperledger Fabric) รวมถึงเซิร์ฟเวอร์ตัวกลาง (Middleware) สำหรับการพัฒนาและออกแบบระบบติดตามข้อมูลและจัดเก็บบันทึกที่มีความปลอดภัยสูงและเสถียรภาพในการทำงาน โดยความรู้ที่นำมาประยุกต์ใช้มีรายละเอียดดังต่อไปนี้
     \begin{enumerate}
-        \item โครงสร้างพื้นฐาน AWS Global Infrastructure :
+        \item โครงสร้างพื้นฐาน AWS Global Infrastructure \\
 โครงสร้างพื้นฐานระดับโลกของ AWS ประกอบด้วยส่วนสำคัญดังนี้
-•	AWS Regions คือพื้นที่ทางภูมิศาสตร์ที่ AWS ตั้งศูนย์ข้อมูล ปัจจุบันมีมากกว่า 30 Regions ทั่วโลก แต่ละ Region ประกอบด้วย Availability Zones หลายแห่งที่แยกจากกันทางกายภาพ
-•	Availability Zones (AZs) คือศูนย์ข้อมูลที่แยกเป็นอิสระต่อกันภายใน Region เดียวกัน ออกแบบมาเพื่อความทนทานต่อความล้มเหลว (Fault Tolerance) โดยมีการเชื่อมต่อกันด้วยเครือข่ายความเร็วสูงและ Latency ต่ำ
-•	Edge Locations คือโหนดที่กระจายอยู่ทั่วโลกสำหรับบริการ Amazon CloudFront เพื่อให้บริการเนื้อหาในตำแหน่งที่ใกล้กับผู้ใช้งานที่สุด
+\begin{itemize}
+    \item AWS Regions คือพื้นที่ทางภูมิศาสตร์ที่ AWS ตั้งศูนย์ข้อมูล ปัจจุบันมีมากกว่า 30 ภูมิภาคทั่วโลก โดยแต่ละภูมิภาคประกอบด้วย Availability Zones หลายแห่งที่แยกจากกันทางกายภาพ
+    \item Availability Zones (AZs) คือศูนย์ข้อมูลที่แยกเป็นอิสระต่อกันภายใน Region เดียวกัน ออกแบบมาเพื่อรองรับความทนทานต่อความล้มเหลว (Fault Tolerance) โดยมีการเชื่อมต่อกันด้วยเครือข่ายความเร็วสูงและค่า Latency ต่ำ
+    \item Edge Locations คือโหนดที่กระจายอยู่ทั่วโลกสำหรับบริการ Amazon CloudFront เพื่อให้บริการเนื้อหาจากตำแหน่งที่ใกล้กับผู้ใช้งานมากที่สุด
+\end{itemize}
 
-        \item บริการหลักของ AWS ที่เกี่ยวข้องกับโครงการ
-โครงการนี้ได้นำบริการหลัก ๆ ของ AWS มาใช้งาน ได้แก่
-Amazon EC2 (Elastic Compute Cloud)
-Amazon EC2 เป็นบริการ IaaS ที่ให้ความสามารถในการสร้างเซิร์ฟเวอร์เสมือน (Virtual Machines) หรือที่เรียกว่า Instance บน Cloud ผู้ใช้งานสามารถเลือกขนาดของ Instance ตามความต้องการและปรับขนาดได้ตามการใช้งาน EC2 รองรับระบบปฏิบัติการหลายประเภท เช่น Linux, Windows และ macOS
-Instance Types ของ EC2 แบ่งออกเป็นหลายกลุ่มตามวัตถุประสงค์การใช้งาน เช่น General Purpose (t3, m5), Compute Optimized (c5), Memory Optimized (r5), Storage Optimized (i3) และ Accelerated Computing (p3, g4)
-Amazon S3 (Simple Storage Service)
-Amazon S3 เป็นบริการจัดเก็บข้อมูลแบบ Object Storage ที่มีความทนทาน (Durability) สูงถึง 99.999999999% โดยข้อมูลจะถูกเก็บในรูปแบบ Object ภายใน Bucket ซึ่งสามารถเก็บข้อมูลได้ไม่จำกัดจำนวน
-S3 มี Storage Classes หลายประเภทสำหรับตอบสนองความต้องการการเข้าถึงข้อมูลที่แตกต่างกัน ได้แก่ S3 Standard สำหรับข้อมูลที่เข้าถึงบ่อย, S3 Intelligent-Tiering สำหรับข้อมูลที่รูปแบบการเข้าถึงไม่แน่นอน, S3 Glacier สำหรับการเก็บข้อมูลระยะยาวและการ Archive
-Amazon RDS (Relational Database Service)
-Amazon RDS เป็นบริการฐานข้อมูลเชิงสัมพันธ์แบบ Managed Service ที่ช่วยลดภาระการดูแลจัดการฐานข้อมูล รองรับ Database Engine หลายประเภท เช่น MySQL, PostgreSQL, MariaDB, Oracle, Microsoft SQL Server และ Amazon Aurora
-คุณสมบัติสำคัญของ RDS ได้แก่ การ Backup อัตโนมัติ, การ Patch อัตโนมัติ, Multi-AZ Deployment สำหรับ High Availability, Read Replicas สำหรับเพิ่มประสิทธิภาพการอ่านข้อมูล และการเข้ารหัสข้อมูลทั้งแบบ At-rest และ In-transit
-AWS Lambda
-AWS Lambda เป็นบริการ Serverless Computing ที่ช่วยให้นักพัฒนาสามารถรันโค้ดโดยไม่ต้องจัดการเซิร์ฟเวอร์ Lambda จะทำงานเมื่อมี Event เกิดขึ้น และจะหยุดทำงานเมื่อโค้ดทำงานเสร็จสิ้น ผู้ใช้งานจ่ายค่าบริการเฉพาะเวลาที่โค้ดทำงานจริงเท่านั้น
-Lambda รองรับภาษาโปรแกรมหลายภาษา เช่น Python, Node.js, Java, Go, C\#, Ruby และ PowerShell มักถูกนำมาใช้ร่วมกับ Amazon API Gateway เพื่อสร้าง RESTful API หรือใช้ในรูปแบบ Event-driven Architecture
-Amazon VPC (Virtual Private Cloud)
-Amazon VPC ช่วยให้ผู้ใช้งานสามารถสร้างเครือข่ายเสมือนที่แยกจากกันบน AWS Cloud โดยมีการควบคุม IP Address Range, Subnets, Route Tables และ Network Gateways VPC เป็นพื้นฐานสำคัญของการออกแบบ Network Architecture ที่ปลอดภัยบน AWS
-ส่วนประกอบสำคัญของ VPC ได้แก่ Public Subnet และ Private Subnet, Internet Gateway สำหรับการเชื่อมต่ออินเทอร์เน็ต, NAT Gateway สำหรับให้ Private Subnet เข้าถึงอินเทอร์เน็ต, Security Groups และ Network Access Control Lists (NACLs) สำหรับควบคุมการเข้าถึง
-AWS IAM (Identity and Access Management)
-AWS IAM เป็นบริการจัดการสิทธิ์การเข้าถึงทรัพยากรบน AWS ช่วยให้สามารถกำหนดว่าใครสามารถเข้าถึงทรัพยากรใดได้บ้าง IAM ใช้แนวคิด Principle of Least Privilege ซึ่งหมายความว่าผู้ใช้งานหรือบริการจะได้รับสิทธิ์เฉพาะที่จำเป็นสำหรับการทำงานเท่านั้น
-IAM ประกอบด้วย Users, Groups, Roles และ Policies โดย Policies เขียนในรูปแบบ JSON เพื่อกำหนด Actions, Resources และ Conditions ที่อนุญาตหรือปฏิเสธการเข้าถึง
-
-        \item AWS DevOps และการ Deploy แอปพลิเคชัน DevOps เป็นแนวปฏิบัติที่รวม Development และ Operations เข้าด้วยกัน โดยมีเป้าหมายเพื่อเพิ่มความเร็วในการพัฒนา ปรับปรุงคุณภาพซอฟต์แวร์ และเพิ่มความน่าเชื่อถือของการ Deploy AWS มีบริการที่รองรับกระบวนการ DevOps อย่างครบครัน
-AWS CodePipeline
-AWS CodePipeline เป็นบริการ Continuous Integration และ Continuous Delivery (CI/CD) ที่ช่วยอัตโนมัติขั้นตอนการ Build, Test และ Deploy แอปพลิเคชัน ช่วยให้สามารถส่งมอบ Feature ใหม่และอัปเดตอย่างรวดเร็วและเชื่อถือได้
-Amazon ECS และ Amazon EKS
-Amazon Elastic Container Service (ECS) เป็นบริการ Container Orchestration ที่รองรับ Docker Container ช่วยให้สามารถรันและจัดการ Container บน AWS ได้ง่าย ในขณะที่ Amazon Elastic Kubernetes Service (EKS) เป็นบริการ Managed Kubernetes ที่ช่วยลดความซับซ้อนในการจัดการ Kubernetes Cluster
-AWS CloudFormation
-AWS CloudFormation เป็นบริการ Infrastructure as Code (IaC) ที่ช่วยให้สามารถกำหนดและ Provision โครงสร้างพื้นฐาน AWS โดยใช้ Template ในรูปแบบ JSON หรือ YAML ทำให้สามารถจัดการโครงสร้างพื้นฐานได้อย่างสม่ำเสมอและทำซ้ำได้
-
-        \item ความปลอดภัยบน AWS:
-AWS ให้ความสำคัญกับความปลอดภัยเป็นลำดับแรก โดยใช้โมเดล Shared Responsibility Model ซึ่งแบ่งความรับผิดชอบด้านความปลอดภัยระหว่าง AWS และลูกค้า AWS รับผิดชอบความปลอดภัยของโครงสร้างพื้นฐาน Cloud (Security of the Cloud) ในขณะที่ลูกค้ารับผิดชอบความปลอดภัยของสิ่งที่ทำงานอยู่บน Cloud (Security in the Cloud)
-AWS Shield และ AWS WAF
-AWS Shield เป็นบริการป้องกัน DDoS Attack โดยอัตโนมัติ แบ่งเป็น Shield Standard ที่ให้บริการฟรีสำหรับทุก AWS Customer และ Shield Advanced สำหรับการป้องกันขั้นสูง AWS Web Application Firewall (WAF) ช่วยป้องกัน Web Application จาก Exploit และ Bot ที่พยายามโจมตีช่องโหว่
-AWS KMS (Key Management Service)
-AWS KMS เป็นบริการจัดการ Encryption Key สำหรับการเข้ารหัสข้อมูล รวมเข้ากับบริการอื่น ๆ ของ AWS ได้อย่างราบรื่น ช่วยให้สามารถควบคุมการเข้าถึง Key และตรวจสอบการใช้งาน Key ผ่าน AWS CloudTrail
+        \item บริการหลักของ AWS ที่เกี่ยวข้องกับโครงงาน \\
+        โครงงานนี้ได้นำบริการหลักของ AWS มาประยุกต์ใช้ ดังต่อไปนี้
+    \begin{itemize}
+    \item Amazon EC2 (Elastic Compute Cloud)\\
+          Amazon EC2 เป็นบริการ IaaS ที่ให้ความสามารถในการสร้างเซิร์ฟเวอร์เสมือน (Virtual Machines) หรือที่เรียกว่า Instance บน Cloud ผู้ใช้งานสามารถเลือกขนาดของ Instance ตามความต้องการและปรับขนาดได้ตามการใช้งาน EC2 รองรับระบบปฏิบัติการหลายประเภท เช่น Linux, Windows และ macOS นอกจากนี้ Instance Types ของ EC2 ยังแบ่งออกเป็นหลายกลุ่มตามวัตถุประสงค์การใช้งาน ได้แก่ General Purpose (t3, m5), Compute Optimized (c5), Memory Optimized (r5), Storage Optimized (i3) และ Accelerated Computing (p3, g4)
+    \item Amazon S3 (Simple Storage Service) \\
+        Amazon S3 เป็นบริการจัดเก็บข้อมูลแบบ Object Storage ที่มีความทนทาน (Durability) สูงถึงร้อยละ 99.999999999 โดยมี Storage Classes หลายประเภทเพื่อตอบสนองความต้องการการเข้าถึงข้อมูลในรูปแบบต่าง ๆ ได้แก่ S3 Standard สำหรับข้อมูลที่มีการเข้าถึงบ่อยครั้ง, S3 Intelligent-Tiering สำหรับข้อมูลที่รูปแบบการเข้าถึงไม่แน่นอน และ S3 Glacier สำหรับการจัดเก็บข้อมูลระยะยาวและการ Archive
+    \item  Amazon RDS (Relational Database Service) \\
+    Amazon RDS เป็นบริการฐานข้อมูลเชิงสัมพันธ์แบบ Managed Service ที่ช่วยลดภาระในการดูแลจัดการฐานข้อมูล รองรับ Database Engine หลายประเภท เช่น MySQL, PostgreSQL, MariaDB, Oracle, Microsoft SQL Server และ Amazon Aurora คุณสมบัติสำคัญของ RDS ได้แก่ การสำรองข้อมูลอัตโนมัติ (Automatic Backup), การปรับปรุงระบบอัตโนมัติ (Automatic Patch), Multi-AZ Deployment เพื่อรองรับการใช้งานต่อเนื่อง (High Availability), Read Replicas เพื่อเพิ่มประสิทธิภาพการอ่านข้อมูล และการเข้ารหัสข้อมูลทั้งแบบ At-rest และ In-transit
+    \item AWS Lambda \\
+    AWS Lambda เป็นบริการ Serverless Computing ที่ช่วยให้นักพัฒนาสามารถรันโค้ดโดยไม่จำเป็นต้องจัดการเซิร์ฟเวอร์ Lambda จะทำงานเมื่อมี Event เกิดขึ้น และหยุดทำงานเมื่อโค้ดดำเนินการเสร็จสิ้น ผู้ใช้งานชำระค่าบริการเฉพาะช่วงเวลาที่โค้ดทำงานจริงเท่านั้น Lambda รองรับภาษาโปรแกรมหลายภาษา เช่น Python, Node.js, Java, Go, Ruby และ PowerShell และมักถูกนำมาใช้ร่วมกับ Amazon API Gateway เพื่อสร้าง RESTful API หรือนำไปใช้ในรูปแบบ Event-driven Architecture
+    \item Amazon VPC (Virtual Private Cloud) \\
+    Amazon VPC ช่วยให้ผู้ใช้งานสามารถสร้างเครือข่ายเสมือนส่วนตัวที่แยกออกจากกันบน AWS Cloud โดยมีการควบคุม IP Address Range, Subnets, Route Tables และ Network Gateways อย่างครบถ้วน VPC ถือเป็นพื้นฐานสำคัญของการออกแบบ Network Architecture ที่มีความปลอดภัยบน AWS ส่วนประกอบสำคัญของ VPC ได้แก่ Public Subnet และ Private Subnet, Internet Gateway สำหรับการเชื่อมต่ออินเทอร์เน็ต, NAT Gateway สำหรับให้ Private Subnet เข้าถึงอินเทอร์เน็ต รวมถึง Security Groups และ Network Access Control Lists (NACLs) สำหรับควบคุมการเข้าถึงระบบ
+    \item AWS IAM (Identity and Access Management) \\
+    AWS IAM เป็นบริการจัดการสิทธิ์การเข้าถึงทรัพยากรบน AWS ช่วยให้สามารถกำหนดได้ว่าผู้ใช้งานหรือบริการใดสามารถเข้าถึงทรัพยากรใดได้บ้าง IAM ยึดหลัก Principle of Least Privilege ซึ่งหมายความว่าผู้ใช้งานหรือบริการจะได้รับสิทธิ์เฉพาะที่จำเป็นสำหรับการทำงานเท่านั้น IAM ประกอบด้วย Users, Groups, Roles และ Policies โดย Policies เขียนในรูปแบบ JSON เพื่อกำหนด Actions, Resources และ Conditions ที่อนุญาตหรือปฏิเสธการเข้าถึง
+    \end{itemize}
 
 
-        \item การ Monitoring และ Logging บน AWS
-การ Monitoring และ Logging เป็นส่วนสำคัญของการดูแลระบบบน Cloud AWS มีบริการที่ครอบคลุมสำหรับการตรวจสอบและวิเคราะห์ประสิทธิภาพของระบบ
-Amazon CloudWatch
-Amazon CloudWatch เป็นบริการ Monitoring และ Observability สำหรับ AWS ให้ข้อมูล Metrics, Logs และ Events ของทรัพยากร AWS สามารถตั้งค่า Alarm เพื่อแจ้งเตือนเมื่อ Metric เกินค่าที่กำหนด และสร้าง Dashboard เพื่อแสดงภาพรวมของระบบได้
-AWS CloudTrail
-AWS CloudTrail บันทึก API Call ทั้งหมดที่เกิดขึ้นใน AWS Account ช่วยให้สามารถตรวจสอบการกระทำต่าง ๆ ที่เกิดขึ้นกับทรัพยากร AWS ได้ เป็นเครื่องมือสำคัญสำหรับ Security Auditing, Compliance และ Troubleshooting
+       
+        
+
+        \item  AWS DevOps และการ Deploy แอปพลิเคชัน \\
+        DevOps เป็นแนวปฏิบัติที่รวมกระบวนการพัฒนา (Development) และการดำเนินงาน (Operations) เข้าด้วยกัน โดยมีเป้าหมายเพื่อเพิ่มความรวดเร็วในการพัฒนา ปรับปรุงคุณภาพซอฟต์แวร์ และเพิ่มความน่าเชื่อถือในการ Deploy AWS มีบริการที่รองรับกระบวนการ DevOps อย่างครบครัน ดังนี้
+  \begin{itemize}
+    \item AWS CodePipeline\\
+         AWS CodePipeline เป็นบริการ Continuous Integration และ Continuous Delivery (CI/CD) ที่ช่วยดำเนินกระบวนการ Build, Test และ Deploy แอปพลิเคชันโดยอัตโนมัติ ช่วยให้สามารถส่งมอบฟีเจอร์ใหม่และอัปเดตระบบได้อย่างรวดเร็วและเชื่อถือได้
+    \item Amazon ECS และ Amazon EKS \\
+        Amazon Elastic Container Service (ECS) เป็นบริการ Container Orchestration ที่รองรับ Docker Container ช่วยให้สามารถรันและจัดการ Container บน AWS ได้อย่างสะดวก ในขณะที่ Amazon Elastic Kubernetes Service (EKS) เป็นบริการ Managed Kubernetes ที่ช่วยลดความซับซ้อนในการจัดการ Kubernetes Cluster
+    \item AWS CloudFormation \\
+    AWS CloudFormation เป็นบริการ Infrastructure as Code (IaC) ที่ช่วยให้สามารถกำหนดและจัดเตรียม (Provision) โครงสร้างพื้นฐาน AWS โดยใช้ Template ในรูปแบบ JSON หรือ YAML ทำให้สามารถจัดการโครงสร้างพื้นฐานได้อย่างสม่ำเสมอและทำซ้ำได้
+    \end{itemize}
+
+        \item ความปลอดภัยบน AWS \\
+        AWS ให้ความสำคัญกับความปลอดภัยเป็นลำดับแรก โดยใช้โมเดล Shared Responsibility Model ซึ่งแบ่งความรับผิดชอบด้านความปลอดภัยระหว่าง AWS และลูกค้า โดย AWS รับผิดชอบความปลอดภัยของโครงสร้างพื้นฐาน Cloud (Security of the Cloud) ในขณะที่ลูกค้ารับผิดชอบความปลอดภัยของสิ่งที่ทำงานอยู่บน Cloud (Security in the Cloud) บริการที่เกี่ยวข้องกับความปลอดภัยที่นำมาใช้ในโครงงาน ได้แก่
+\begin{itemize}
+    \item AWS Shield และ AWS WAF\\
+         AWS Shield เป็นบริการป้องกันการโจมตีแบบ DDoS โดยอัตโนมัติ แบ่งเป็น Shield Standard ที่ให้บริการฟรีสำหรับ AWS Customer ทุกราย และ Shield Advanced สำหรับการป้องกันในระดับสูงขึ้น AWS Web Application Firewall (WAF) ช่วยป้องกัน Web Application จาก Exploit และ Bot ที่พยายามโจมตีช่องโหว่ของระบบ
+    \item AWS KMS (Key Management Service) \\
+       AWS KMS เป็นบริการจัดการคีย์การเข้ารหัส (Encryption Key) สำหรับการเข้ารหัสข้อมูล สามารถผสานรวมกับบริการอื่น ๆ ของ AWS ได้อย่างราบรื่น ช่วยให้สามารถควบคุมการเข้าถึงคีย์และตรวจสอบการใช้งานคีย์ผ่าน AWS CloudTrail ได้
+    \end{itemize}
+
+        \item การ Monitoring และ Logging บน AWS \\
+        การ Monitoring และ Logging เป็นส่วนสำคัญของการดูแลระบบบน Cloud AWS มีบริการที่ครอบคลุมสำหรับการตรวจสอบและวิเคราะห์ประสิทธิภาพของระบบ ดังนี้
+    \begin{itemize}
+    \item Amazon CloudWatch\\
+         Amazon CloudWatch เป็นบริการ Monitoring และ Observability สำหรับ AWS ที่ให้ข้อมูล Metrics, Logs และ Events ของทรัพยากร AWS สามารถตั้งค่า Alarm เพื่อแจ้งเตือนเมื่อค่า Metric เกินเกณฑ์ที่กำหนด และสร้าง Dashboard เพื่อแสดงภาพรวมของระบบได้
+    \item AWS CloudTrail \\
+       AWS CloudTrail บันทึก API Call ทั้งหมดที่เกิดขึ้นใน AWS Account ช่วยให้สามารถตรวจสอบการกระทำต่าง ๆ ที่เกิดขึ้นกับทรัพยากร AWS ได้ ถือเป็นเครื่องมือสำคัญสำหรับการตรวจสอบความปลอดภัย (Security Auditing), การปฏิบัติตามข้อกำหนด (Compliance) และการแก้ไขปัญหา (Troubleshooting)
+    \end{itemize}
 
     \end{enumerate}
-    จากการศึกษาทฤษฎีและเทคโนโลยีที่เกี่ยวข้อง พบว่า Amazon Web Services (AWS) เป็นแพลตฟอร์ม Cloud Computing ที่มีความสมบูรณ์และครอบคลุมบริการที่หลากหลาย ตั้งแต่การประมวลผล การจัดเก็บข้อมูล ฐานข้อมูล ระบบเครือข่าย ไปจนถึงความปลอดภัยและการ Monitoring
-โครงสร้างพื้นฐานระดับโลกของ AWS ที่ประกอบด้วย Regions และ Availability Zones ช่วยให้ระบบมีความพร้อมใช้งานสูง (High Availability) และรองรับการขยายตัวได้อย่างยืดหยุ่น บริการต่าง ๆ ของ AWS ที่นำมาใช้ในโครงการนี้ ได้แก่ EC2, S3, RDS, Lambda, VPC และ IAM ล้วนเป็นบริการที่ได้รับการยอมรับอย่างกว้างขวางในอุตสาหกรรมและมีเอกสารอ้างอิงที่ครอบคลุม ซึ่งเป็นพื้นฐานสำคัญในการพัฒนาโครงการนี้ให้มีประสิทธิภาพและเชื่อถือได้
+    จากการศึกษาทฤษฎีและเทคโนโลยีที่เกี่ยวข้อง พบว่า Amazon Web Services (AWS) เป็นแพลตฟอร์มประมวลผลแบบกลุ่มเมฆที่มีความสมบูรณ์และครอบคลุมบริการในหลากหลายด้าน ตั้งแต่การประมวลผล การจัดเก็บข้อมูล ฐานข้อมูล ระบบเครือข่าย ไปจนถึงความปลอดภัยและการ Monitoring โครงสร้างพื้นฐานระดับโลกของ AWS ที่ประกอบด้วย Regions และ Availability Zones ช่วยให้ระบบมีความพร้อมใช้งานสูง (High Availability) และรองรับการขยายตัวได้อย่างยืดหยุ่น บริการต่าง ๆ ของ AWS ที่นำมาใช้ในโครงงานนี้ ได้แก่ EC2, S3, RDS, Lambda, VPC และ IAM ล้วนเป็นบริการที่ได้รับการยอมรับอย่างกว้างขวางในอุตสาหกรรมและมีเอกสารอ้างอิงที่ครอบคลุม ซึ่งถือเป็นพื้นฐานสำคัญในการพัฒนาโครงงานนี้ให้มีประสิทธิภาพและเชื่อถือได้
 
 \end{itemize}
